@@ -1,5 +1,6 @@
 import sys
 from src import ClassA
+from src import shared_classb_instance
 
 def main() -> int:
     """Simple main function
@@ -11,6 +12,8 @@ def main() -> int:
 
     classa_instance = ClassA()
     classa_instance.print_name()
+
+    shared_classb_instance.log_caller(main.__name__)
     
     return 0
 
