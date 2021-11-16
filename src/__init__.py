@@ -1,0 +1,1 @@
+from .TemplateClassA import ClassA
